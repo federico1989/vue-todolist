@@ -13,8 +13,8 @@
     <div class="card_list" id="my_list">
       <img :src="image" alt="">
       <div class="add_task">
-        <input type="text" name="" value="">
-        <button type="button" name="button">Add</button>
+        <input v-model="message" type="text" name="" value="">
+        <button @click="addNewTask" type="button" name="button">Add</button>
       </div>
       <section class="lista_task">
         <h4>To do list</h4>
