@@ -7,3 +7,9 @@
 body {
   background: #b1c4df;
 }
+img {
+  width: 200px;
+}
+.mini_card {
+  background: lightgray;
+}
