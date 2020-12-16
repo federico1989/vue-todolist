@@ -7,6 +7,13 @@ let app = new Vue ({
       "Do else",
       "Do something else"
     ]
-  }
+  },
+  methods: {
+    newTask: {
 
+    },
+    erase: function(index) {
+      this.tasks.splice(index, 1);
+    }
+  }
 })
