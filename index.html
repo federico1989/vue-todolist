@@ -14,7 +14,7 @@
       <div class="slider_wrapper">
         <img :src="image" alt="">
         <div class="add_task">
-          <input v-model="newTask" type="text" name="" value="">
+          <input v-on:keyup.enter="addNewTask" v-model="newTask" type="text" name="" value="">
           <button @click="addNewTask" type="button" name="button">Add</button>
         </div>
         <section class="lista_task">
