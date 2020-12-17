@@ -16,6 +16,7 @@ let app = new Vue ({
     addNewTask: function () {
       if (this.newTask.length > 3) {
         this.tasks.push(this.newTask);
+        this.newTask = "";
       }else {
         alert("La parola è troppo corta");
       }
@@ -27,5 +28,5 @@ let app = new Vue ({
   }
 })
 
-// Quando l'utente inserisce una task ha due modi per salvarla: o preme il pulsante add o preme il taso Enter della tastiera.
+// Quando l'utente inserisce una task ha due modi per salvarla: o preme il pulsante add o preme il tasto Enter della tastiera.
 // Attenzione: l'utente non deve inserire tasks vuote ma almeno un tot di caratteri.
